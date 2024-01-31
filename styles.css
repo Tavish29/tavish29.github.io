@@ -2,7 +2,7 @@
 body {
     font-family: 'Arial', sans-serif;
     font-size: 12pt;
-    background-color: #f2f2f2;
+    background-color: #595aaf79;
     color: #333;
     margin: 20pt;
 }
@@ -20,13 +20,13 @@ h2 {
 
 h3 {
     font-size: 16pt;
-    color: #4285f4;
+    color: #3e5e4865;
 }
 
 
 p {
     font-size: 14pt;
-    color: #555;
+    color: #546479a4;
     margin-bottom: 15px;
 }
 
