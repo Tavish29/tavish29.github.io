@@ -57,7 +57,18 @@
             document.getElementById('displayName').innerText = 'Hello, ' + name + '!';
         });
     </script>
-    
+ <script>
+    var navItems = document.querySelectorAll('.nav-item');
+    navItems.forEach(function(item) {
+        item.addEventListener('mouseover', function() {
+            this.style.backgroundColor = '#turquoise'; // Change to your preferred hover color
+        });
+        item.addEventListener('mouseout', function() {
+            this.style.backgroundColor = 'lightblue'; // Resets to original background color
+        });
+    });
+</script>
+   
 </body>
 
 </html>
