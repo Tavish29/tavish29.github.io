@@ -43,7 +43,15 @@
     <footer>
         <p>For more details, please visit my <a href="https://www.linkedin.com/in/tavish-ramasawmy-0a426121a/">LinkedIn profile</a>.</p>
     </footer>
-
+    <button id="namePromptBtn">Tell us your name</button>
+    <p id="displayName"></p>
+    <script>
+        document.getElementById('namePromptBtn').addEventListener('click', function() {
+            var name = prompt('Please enter your name:');
+            document.getElementById('displayName').innerText = 'Hello, ' + name + '!';
+        });
+    </script>
+    
 </body>
 
 </html>
