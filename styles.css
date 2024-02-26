@@ -2,9 +2,9 @@
 body {
     font-family: 'Arial', sans-serif;
     font-size: 12pt;
-    background-color: #69ddc6;
+    background-color: #9c9999;
     color: #0a0101;
-    margin: 25pt;
+    margin: 30pt;
 }
 
 
@@ -116,3 +116,19 @@ td {
 
 /* Show the dropdown menu */
 .show {display: block;}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px; /* Adjust as needed for spacing */
+}
+
+th, td {
+    border: 1px solid #999;
+    padding: 8px;
+    text-align: left;
+}
+
+thead {
+    background-color: #f2f2f2;
+}
+

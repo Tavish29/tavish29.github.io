@@ -39,15 +39,28 @@
             <p>I pursued a Bachelor's degree in Business Technology Management. The program provided a solid foundation in business principles and advanced coursework in IT.</p>
             <p>One course that had a significant impact on me was <ITM200>"Fundamentals of Programming"</strong>. This course delved into the basics of coding using Python language. The hands-on project allowed me to apply new techniques to real-world problems, enhancing my problem-solving skills.</p>
         <div>
-    </section>
-
-    <section>
-        <h2>Extra-Curricular Activities</h2>
-        <ul>
-            <li>Cross country, where I participated in national competitions.</li>
-            <li>Model united nations where i represented Libya for debates</li>
-        </ul>
-    </section>
+            <section>
+                <h2>Extra-Curricular Activities</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Activity</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Cross Country</td>
+                            <td>Participated in national competitions.</td>
+                        </tr>
+                        <tr>
+                            <td>Model United Nations</td>
+                            <td>Represented Libya in debates.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            
     <img id="clickableImage" src="myPhoto.jpeg" alt="Clickable Image" style="width: 100px; height: auto;">
     <script>
         document.getElementById('clickableImage').addEventListener('click', function() {
@@ -70,10 +83,10 @@
     var navItems = document.querySelectorAll('.nav-item');
     navItems.forEach(function(item) {
         item.addEventListener('mouseover', function() {
-            this.style.backgroundColor = '#turquoise'; // Change to your preferred hover color
+            this.style.backgroundColor = '#D3D3D3'; 
         });
         item.addEventListener('mouseout', function() {
-            this.style.backgroundColor = 'lightblue'; // Resets to original background color
+            this.style.backgroundColor = ''; 
         });
     });
 </script>
