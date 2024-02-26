@@ -2,7 +2,7 @@
 body {
     font-family: 'Arial', sans-serif;
     font-size: 12pt;
-    background-color: #9c9999;
+    background-color: #c2bebe;
     color: #0a0101;
     margin: 30pt;
 }
@@ -10,12 +10,12 @@ body {
 
 h1 {
     font-size: 24pt;
-    color: #4285f4;
+    color: #db7b48;
 }
 
 h2 {
     font-size: 18pt;
-    color: #0f9d58;
+    color: #a55454;
 }
 
 h3 {
@@ -123,12 +123,12 @@ table {
 }
 
 th, td {
-    border: 1px solid #999;
+    border: 1px solid #637982c5;
     padding: 8px;
     text-align: left;
 }
 
 thead {
-    background-color: #f2f2f2;
+    background-color: #946c6c;
 }
 
