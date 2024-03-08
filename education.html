@@ -9,7 +9,44 @@
  </head>
 
 <body>
-
+    <form id="myForm" onsubmit="storeData(); return false;">
+        <fieldset>
+            <legend>User Information</legend>
+            
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+            
+            <fieldset>
+                <legend>Gender</legend>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+            </fieldset><br>
+            
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="1" max="100"><br><br>
+            
+            <input type="checkbox" id="subscribe" name="subscribe" value="newsletter">
+            <label for="subscribe">Subscribe to newsletter</label><br><br>
+            
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea><br><br>
+            
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </fieldset>
+    </form>
+    <p id="result"></p>
+    
     <header>
         <h1>My Educational Journey</h1>
         <img id="clickableImage" src="myPhoto.jpeg" alt="Clickable Image" style="width: 100px; height: auto;">
@@ -110,7 +147,29 @@
         }
     }
 </script>
-  
+<script>
+    function storeData() {
+        const username = document.getElementById('username').value;
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value; // Consider encrypting before storing
+        const gender = document.querySelector('input[name="gender"]:checked').value;
+        const age = document.getElementById('age').value;
+        const subscribe = document.getElementById('subscribe').checked;
+        const feedback = document.getElementById('feedback').value;
+        
+        localStorage.setItem('username', username);
+        localStorage.setItem('email', email);
+        localStorage.setItem('password', password); 
+        localStorage.setItem('gender', gender);
+        localStorage.setItem('age', age);
+        localStorage.setItem('subscribe', subscribe);
+        localStorage.setItem('feedback', feedback);
+        
+        // Display a confirmation message or redirect the user
+        document.getElementById('result').textContent = "Your data has been saved!";
+    }
+</script>
+ 
 </body>
 
 </html>
