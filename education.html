@@ -9,6 +9,25 @@
  </head>
 
 <body>
+    
+    <header>
+        <h1>My Educational Journey</h1>
+        <img id="clickableImage" src="myPhoto.jpeg" alt="Clickable Image" style="width: 100px; height: auto;">
+    </header>
+<!-- Navigation Menu -->
+<div class="dropdown">
+    <button onclick="toggleDropdown()" class="dropbtn">Menu</button>
+    <div id="myDropdown" class="dropdown-content">
+        <a href="https://www.andbeyond.com/destinations/indian-ocean-islands/mauritius/">Birthplace</a>
+        <a href="https://www.facebook.com/tsslmotors/">Ads Portfolio</a>
+        <a href="#">Experience</a>
+        <a href="#">Awards</a>
+        <a href="javascript:void(0);" onclick="showContactForm()">Contact</a>
+    </div>
+</div>
+
+<!-- Hidden Contact Form initially not displayed -->
+<div id="contactForm" style="display:none;">
     <form id="myForm" onsubmit="storeData(); return false;">
         <fieldset>
             <legend>User Information</legend>
@@ -47,21 +66,8 @@
     </form>
     <p id="result"></p>
     
-    <header>
-        <h1>My Educational Journey</h1>
-        <img id="clickableImage" src="myPhoto.jpeg" alt="Clickable Image" style="width: 100px; height: auto;">
-    </header>
-<!-- Navigation Menu -->
-<div class="dropdown">
-    <button onclick="toggleDropdown()" class="dropbtn">Menu</button>
-    <div id="myDropdown" class="dropdown-content">
-        <a href="https://www.andbeyond.com/destinations/indian-ocean-islands/mauritius/">Birthplace</a>
-        <a href="https://www.facebook.com/tsslmotors/">Ads Portfolio</a>
-        <a href="#">Experience</a>
-        <a href="#">Awards</a>
-        <a href="#">Contact</a>
-    </div>
 </div>
+
 
     <section id="links-container">
         <div class="links">
@@ -146,6 +152,12 @@
             }
         }
     }
+    function showContactForm() {
+    var form = document.getElementById("contactForm");
+    form.style.display = "block";  // This will show the contact form
+    toggleDropdown();  // Optionally, close the dropdown menu
+}
+
 </script>
 <script>
     function storeData() {
