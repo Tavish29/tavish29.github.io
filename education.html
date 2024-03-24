@@ -118,6 +118,7 @@
         <p>For more details, please visit my <a href="https://www.linkedin.com/in/tavish-ramasawmy-0a426121a/">LinkedIn profile</a>.</p>
     </footer>
     <script>
+        // Changing font size for users with low vision and changing colors for proanopia and tritanopia
         function changeFontSize(action) {
             var body = document.body;
             var currentFontSize = window.getComputedStyle(body, null).getPropertyValue('font-size');
@@ -163,7 +164,7 @@
             document.getElementById('displayName').innerText = 'Hello, ' + name + '!';
         });
     </script>
-    <div id="accessibility-features">
+    <div id="accessibility-features"> <!--Code for accessibility features, increasing, decreasing font size-->
         <h2>Accessibility Features</h2>
         <div>
             <button onclick="changeFontSize('increase')">Increase Font Size</button>
