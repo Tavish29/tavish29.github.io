@@ -12,7 +12,7 @@
     
     <header>
         <h1>My Educational Journey</h1>
-        <img id="clickableImage" src="myPhoto.jpeg" alt="Professional headshot of [Tavish Ramasawmy]" style="width: 100px; height: auto;"> 
+        <img id="clickableImage" src="myPhoto.jpeg" alt="A portrait of me." style="width: 100px; height: auto;"> <!--for users who cannot see image-->
     </header>
 <!-- Navigation Menu -->
 <div class="dropdown">
@@ -70,7 +70,18 @@
     <p id="result"></p>
     
 </div>
-
+<div id="accessibility-features">
+    <h2>Accessibility Features</h2>
+    <div>
+        <button onclick="changeFontSize('increase')">Increase Font Size</button>
+        <button onclick="changeFontSize('decrease')">Decrease Font Size</button>
+    </div>
+    <div>
+        <button onclick="changeColorScheme('normal')">Normal Vision</button>
+        <button onclick="changeColorScheme('protanopia')">Protanopia</button>
+        <button onclick="changeColorScheme('tritanopia')">Tritanopia</button>
+    </div>
+</div>
 
     <section id="links-container">
         <div class="links">
