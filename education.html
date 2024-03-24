@@ -129,6 +129,44 @@
     <footer>
         <p>For more details, please visit my <a href="https://www.linkedin.com/in/tavish-ramasawmy-0a426121a/">LinkedIn profile</a>.</p>
     </footer>
+    <script>
+        function changeFontSize(action) {
+            var body = document.body;
+            var currentFontSize = window.getComputedStyle(body, null).getPropertyValue('font-size');
+            var newFontSize = parseFloat(currentFontSize);
+
+            if (action === 'increase') {
+                newFontSize *= 1.1;
+            } else if (action === 'decrease') {
+                newFontSize /= 1.1;
+            }
+            body.style.fontSize = newFontSize + 'px';
+        }
+
+        function changeColorScheme(scheme) {
+            var body = document.body;
+
+            switch (scheme) {
+                case 'normal':
+                    body.style.color = 'black';
+                    body.style.backgroundColor = 'white';
+                    break;
+                case 'protanopia':
+                    // Example color adjustment for Protanopia
+                    body.style.color = '#000';
+                    body.style.backgroundColor = '#FFF';
+                    break;
+                case 'tritanopia':
+                    // Example color adjustment for Tritanopia
+                    body.style.color = '#000';
+                    body.style.backgroundColor = '#FFF';
+                    break;
+                default:
+                    body.style.color = 'black';
+                    body.style.backgroundColor = 'white';
+            }
+        }
+    </script>
     <button id="namePromptBtn">Tell us your name</button>
     <p id="displayName"></p>
     <script>
