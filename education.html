@@ -70,18 +70,6 @@
     <p id="result"></p>
     
 </div>
-<div id="accessibility-features">
-    <h2>Accessibility Features</h2>
-    <div>
-        <button onclick="changeFontSize('increase')">Increase Font Size</button>
-        <button onclick="changeFontSize('decrease')">Decrease Font Size</button>
-    </div>
-    <div>
-        <button onclick="changeColorScheme('normal')">Normal Vision</button>
-        <button onclick="changeColorScheme('protanopia')">Protanopia</button>
-        <button onclick="changeColorScheme('tritanopia')">Tritanopia</button>
-    </div>
-</div>
 
     <section id="links-container">
         <div class="links">
@@ -152,14 +140,14 @@
                     body.style.backgroundColor = 'white';
                     break;
                 case 'protanopia':
-                    // Example color adjustment for Protanopia
-                    body.style.color = '#000';
-                    body.style.backgroundColor = '#FFF';
+                    // Color adjustment for Protanopia
+                    body.style.color = '#FFC20A';
+                    body.style.backgroundColor = '#0C7BDC';
                     break;
                 case 'tritanopia':
-                    // Example color adjustment for Tritanopia
-                    body.style.color = '#000';
-                    body.style.backgroundColor = '#FFF';
+                    // Color adjustment for Tritanopia
+                    body.style.color = '#E1BE6A';
+                    body.style.backgroundColor = '#40B0A6';
                     break;
                 default:
                     body.style.color = 'black';
@@ -175,6 +163,18 @@
             document.getElementById('displayName').innerText = 'Hello, ' + name + '!';
         });
     </script>
+    <div id="accessibility-features">
+        <h2>Accessibility Features</h2>
+        <div>
+            <button onclick="changeFontSize('increase')">Increase Font Size</button>
+            <button onclick="changeFontSize('decrease')">Decrease Font Size</button>
+        </div>
+        <div>
+            <button onclick="changeColorScheme('normal')">Normal Vision</button>
+            <button onclick="changeColorScheme('protanopia')">Protanopia</button>
+            <button onclick="changeColorScheme('tritanopia')">Tritanopia</button>
+        </div>
+    </div>
  <script>
     var navItems = document.querySelectorAll('.nav-item');
     navItems.forEach(function(item) {
